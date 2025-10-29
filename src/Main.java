@@ -1,7 +1,9 @@
 public class Main{
     public static void main(String[] args){
 
-        Mattoncino a = new Mattoncino();
+        Prodotto castello = new Prodotto(10110,"castello");
+
+        Mattoncino a = new Mattoncino(23,23,23,23,23,23,23,23);
 
 
     }

@@ -4,13 +4,20 @@ public class Mattoncino {
     private int red;
     private int blue;
     private int green;
-    private int larghezza;
-    private int lunghezza;
-    private int altezza;
+    private float larghezza;
+    private float lunghezza;
+    private float altezza;
 
 
-    public Mattoncino(){
-
+    public Mattoncino(int codiceunivoco,int red,int blue, int green, float peso,float larghezza, float lunghezza, float altezza){
+            this.codiceunivoco = codiceunivoco;
+            this.peso = peso;
+            this.altezza=altezza;
+            this.larghezza=larghezza;
+            this.lunghezza=lunghezza;
+            this.red=red;
+            this.blue=blue;
+            this.green=green;
     }
 
 
@@ -99,4 +106,6 @@ public class Mattoncino {
     public void setGreen(int green){
         this.green = green;
     }
+
+
 }
