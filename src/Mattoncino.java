@@ -9,16 +9,8 @@ public class Mattoncino {
     private float altezza;
     private float volume;
 
-    public Mattoncino(int codiceunivoco,int red,int blue, int green, float peso,float larghezza, float lunghezza, float altezza){
-            this.codiceunivoco = codiceunivoco;
-            this.peso = peso;
-            this.altezza=altezza;
-            this.larghezza=larghezza;
-            this.lunghezza=lunghezza;
-            this.red=red;
-            this.blue=blue;
-            this.green=green;
-            this.volume=altezza*lunghezza*larghezza;
+    public Mattoncino(){
+
     }
 
 
@@ -108,6 +100,8 @@ public class Mattoncino {
         this.green = green;
     }
 
+
+
     public float volume(float larghezza, float lunghezza, float altezza){
         volume = larghezza*altezza*lunghezza;
         return volume;
@@ -115,7 +109,7 @@ public class Mattoncino {
 
 
     public String toString(){
-        return "mattoncino[CodiceUnivoco: " + this.codiceunivoco + ", Volume: " + this.volume + "]";
+        return "mattoncino [CodiceUnivoco: " + this.codiceunivoco + ", Volume: " + this.volume + ", peso; "+ this.peso+ "]";
     }
 
 }
